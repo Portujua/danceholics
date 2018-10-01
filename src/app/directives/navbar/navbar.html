@@ -1,0 +1,125 @@
+<nav class="navbar navbar-default"
+     ng-class="{ 'click-disabled': !$ctrl.pointerEvents }">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button"
+              class="navbar-toggle margin-xl-right"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="navbar-brand pointer"
+           src="images/logo.svg"
+           alt="Dawere"
+           title="Dawere"
+           ui-sref="root.dashboard">
+    </div>
+
+    <div class="collapse navbar-collapse"
+         id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href=""
+             ui-sref="root.dashboard">
+            <i class="fa fa-fw fa-book"></i> Cursos
+          </a>
+        </li>
+
+        <li uib-dropdown>
+          <a href=""
+             uib-dropdown-toggle>
+            <i class="fa fa-fw fa-user-circle"></i> {{ $ctrl.session.name }} {{ $ctrl.session.lastName }}
+            <!-- <span uib-tooltip="{{ $ctrl.OnlineService.isOnline | conditional:'Conectado a':'Desconectado de' }} Dawere"
+                  tooltip-append-to-body="true"
+                  tooltip-placement="bottom">
+            <i class="fa fa-fw fa-circle"
+               ng-class="{ 'text-success animated pulse infinite': $ctrl.OnlineService.isOnline, 'text-danger animated flash infinite': !$ctrl.OnlineService.isOnline }"></i>
+            </span> -->
+            <i class="fa fa-fw fa-caret-down"></i>
+          </a>
+
+          <ul class="dropdown-menu"
+              uib-dropdown-menu
+              role="menu"
+              aria-labelledby="btn-append-to-to-body">
+            <li class="dropdown-header">Perfil</li>
+
+            <li role="menuitem">
+              <a href=""
+                 ui-sref="root.profile">
+                <i class="fa fa-fw fa-user-edit"></i> Mis datos personales
+              </a>
+            </li>
+            <li role="menuitem">
+              <a href=""
+                 ng-click="$ctrl.openChangeEmail()">
+                <i class="fa fa-fw fa-envelope"></i> Cambiar correo
+              </a>
+            </li>
+            <li role="menuitem">
+              <a href=""
+                 ng-click="$ctrl.openChangePassword()">
+                <i class="fa fa-fw fa-key"></i> Cambiar contraseña
+              </a>
+            </li>
+            <!-- <li role="menuitem">
+              <a href="">
+                <i class="fa fa-fw fa-at"></i> Cuenta asociada
+              </a>
+            </li> -->
+
+            <!-- <li class="divider"></li>
+            <li class="dropdown-header">Estudios</li>
+
+            <li role="menuitem">
+              <a href="">
+                <i class="fa fa-fw fa-clipboard-list"></i> Calificaciones
+              </a>
+            </li>
+
+            <li role="menuitem">
+              <a href="">
+                <i class="fa fa-fw fa-graduation-cap"></i> Ruta al título
+              </a>
+            </li> -->
+
+            <li class="divider"></li>
+            <li role="menuitem">
+              <a href=""
+                 ui-sref="root.notifications">
+                <i class="fa fa-fw fa-bell"></i> Notificaciones
+              </a>
+            </li>
+            <!-- <li role="menuitem">
+              <a href="">
+                <i class="fa fa-fw fa-money-bill-alt"></i> Mis ordenes
+              </a>
+            </li> -->
+
+            <li class="divider"></li>
+
+            <li ng-click="$ctrl.openReportProblem();"
+                role="menuitem">
+              <a href="">
+                <i class="fa fa-fw fa-info-circle"></i> Ayuda
+              </a>
+            </li>
+            <li role="menuitem">
+              <a href=""
+                 ui-sref="logout"
+                 class="text-danger">
+                <i class="fa fa-fw fa-sign-out-alt"></i> Cerrar sesión
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

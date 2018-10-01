@@ -1,0 +1,89 @@
+.navbar {
+  height: $navbar-height !important;
+  min-height: 0px !important;
+  //max-height: $navbar-height !important;
+  // background-color: transparent;
+  // background: url(../images/navbar-bg.png);
+  // background-size: cover;
+  // background-position: center center;
+  border: none;
+  border-bottom: 4px solid $footer-bg-color !important;
+  margin-bottom: 0px !important;
+  // margin-left: -1px;
+
+  &.navbar-fixed-top {
+    border: none;
+  }
+
+  .navbar-right {
+    // position: fixed;
+    // right: 10px;
+    // top: 0;
+    // z-index: $zindex-navbar;
+    // max-width: 150px;
+    //border-bottom: 1px solid $gray-lighter;
+    //background-color: transparent;
+
+    // .dropdown-menu {
+    //   margin-top: -$arc-height;
+    //   z-index: 99999;
+    // }
+
+    & > li {
+      height: $navbar-height;
+
+      & > a {
+        height: $navbar-height;
+        line-height: $font-size-small * 2;
+        font-size: $font-size-small * 1.1;
+        color: #333 !important;
+
+        &[aria-expanded='true'] {
+          color: $brand-secundary !important;
+        }
+
+        &:hover {
+          color: lighten($brand-secundary, 10%) !important;
+        }
+      }
+    }
+  }
+
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    margin-left: -($grid-gutter-width / 2);
+  }
+
+  .navbar-brand {
+    margin: 0;
+    margin-top: 5px;
+    padding: 5px 10px;
+    img {
+      height: 35px;
+    }
+  }
+
+  .profile-pic {
+    float: left;
+    display: inline-block;
+    margin-right: 8px;
+    height: 30px;
+    width: 30px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+
+  .container-fluid:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navbar-aside {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
