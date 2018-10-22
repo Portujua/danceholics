@@ -713,3 +713,18 @@ th.text-bottom {
 .font-danceholics-secundary {
   font-family: 'DanceHolics_1';
 }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auto-height {
+  height: auto;
+}
+
+.bg-black {
+  background-color: #111;
+}

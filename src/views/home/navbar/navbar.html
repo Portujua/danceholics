@@ -7,13 +7,13 @@
     </div>
 
     <div class="pull-right">
-      <div class="navbar-links">
-        <span>Home</span>
-        <span>Cursos</span>
-        <span>Sedes</span>
-        <span>Noticias</span>
-        <span>Contacto</span>
-        <span>¿Quiénes somos?</span>
+      <div class="navbar-links visible-lg visible-md visible-xl">
+        <span ng-click="$ctrl.scrollTo('presentation')">Home</span>
+        <span ng-click="$ctrl.scrollTo('courses')">Cursos</span>
+        <span ng-click="$ctrl.scrollTo('headquarters')">Sedes</span>
+        <span ng-click="$ctrl.scrollTo('news')">Noticias</span>
+        <span ng-click="$ctrl.scrollTo('contact')">Contacto</span>
+        <span ng-click="$ctrl.scrollTo('about')">¿Quiénes somos?</span>
       </div>
     </div>
   </div>

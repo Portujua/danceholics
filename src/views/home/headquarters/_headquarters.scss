@@ -1,2 +1,47 @@
 headquarters {
+  .custom-marker {
+    font-size: 13px;
+    max-width: 250px;
+    padding: 10px;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: #7f7f7f solid 1px;
+    text-align: justify;
+
+    img {
+      width: 40px;
+      float: left;
+      margin-right: 5px;
+    }
+  }
+
+  .custom-marker:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 7px 6px 0;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -6px;
+    bottom: -6px;
+    left: 50%;
+  }
+
+  .custom-marker:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 7px 6px 0;
+    border-color: #7f7f7f transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    margin-left: -6px;
+    bottom: -7px;
+    left: 50%;
+  }
 }

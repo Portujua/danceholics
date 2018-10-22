@@ -1,0 +1,20 @@
+<div class="row auto-height padding-xl-tb">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"
+           ng-repeat="column in $ctrl.columns">
+        <div class="row">
+          <div class="col-12 news-card margin-bottom pointer"
+               ng-repeat="item in column">
+            <img ng-src="{{ item.image }}"
+                 class="img-responsive fw">
+
+            <h3 class="text-primary font-danceholics-secundary font-xxl">{{ item.title }}</h3>
+            <p class="text-justify">{{ item.description }}</p>
+            <span class="text-muted font-sm text-italic">— Añadido el {{ item.date | date:'dd/MM/yyyy' }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

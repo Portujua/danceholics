@@ -11,6 +11,15 @@
     load() {
       //
     }
+
+    scrollTo(name) {
+      $('html,body').animate(
+        {
+          scrollTop: parseInt($(name).offset().top)
+        },
+        1000
+      );
+    }
   }
 
   angular.module('app').component('homeNavbar', {

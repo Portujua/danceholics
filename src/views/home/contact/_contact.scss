@@ -1,0 +1,14 @@
+contact {
+  input,
+  textarea {
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid $brand-primary;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+}
