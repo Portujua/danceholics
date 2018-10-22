@@ -1,9 +1,9 @@
 angular.module('app').config(($stateProvider, $urlRouterProvider) => {
   $stateProvider
-    .state('login', {
+    .state('home', {
       url: '/',
-      template: '<login></login>',
-      title: 'Sign in'
+      template: '<home></home>',
+      title: 'Dance Holics'
     })
     .state('logout', {
       url: '/logout',

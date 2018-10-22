@@ -1,0 +1,17 @@
+presentation {
+  .container-fluid {
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    transition: background-image 2s ease-in-out;
+    margin-top: -$navbar-height;
+
+    .content {
+      height: calc(100vh - #{$navbar-height});
+      width: 100vw;
+
+      font-size: 202px;
+      color: #fefefe;
+    }
+  }
+}

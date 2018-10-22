@@ -8,10 +8,10 @@ angular
    * - date of release
    */
   .constant('APP_INFO', {
-    name: 'Dawere | Educación Formal Online',
-    version: 'v1.3.3',
+    name: 'Dance Holics',
+    version: 'v0.1',
     day: 21,
-    month: 9,
+    month: 10,
     year: 2018,
     // NOTE: do not touch this
     get date() {

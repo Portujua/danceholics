@@ -1,0 +1,24 @@
+.home-navbar {
+  width: 100vw;
+  height: $navbar-height;
+  z-index: 10;
+
+  & > div {
+    z-index: 10;
+  }
+
+  .brand {
+    height: $navbar-height;
+  }
+
+  .navbar-links {
+    span {
+      height: $navbar-height;
+      line-height: $navbar-height;
+      padding: 0px 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #fefefe;
+    }
+  }
+}

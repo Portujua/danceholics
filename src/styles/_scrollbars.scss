@@ -1,8 +1,8 @@
 $scroll-width: 15px !default;
 $scroll-border: solid $body-bg !default; // solid #f5f5f5
 $scroll-track-bg: $body-bg !default; // #f5f5f5
-$scroll-thumb-bg: darken($brand-primary, 6%) !default; // #cdcdcd
-$scroll-thumb-hover-bg: darken($brand-primary, 15%) !default; // #999
+$scroll-thumb-bg: lighten($brand-secundary, 30%) !default; // #cdcdcd
+$scroll-thumb-hover-bg: lighten($brand-secundary, 40%) !default; // #999
 
 // Gmail style scrollbar
 ::-webkit-scrollbar {
@@ -33,7 +33,7 @@ $scroll-thumb-hover-bg: darken($brand-primary, 15%) !default; // #999
 }
 
 ::-webkit-scrollbar-track-piece {
-  background-color: darken($brand-primary, 25%);
+  background-color: darken($brand-secundary, 25%);
 }
 
 ::-webkit-scrollbar-corner {

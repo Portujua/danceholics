@@ -3,13 +3,13 @@ angular.module('app').run(($rootScope, PageService, editableOptions, editableThe
   LocationService.init();
 
   // Facebook init
-  FB.init({ 
-    appId: FACEBOOK_APP_ID,
-    status: false, 
-    cookie: false, 
-    xfbml: true,
-    version: 'v2.4'
-  });
+  // FB.init({
+  //   appId: FACEBOOK_APP_ID,
+  //   status: false,
+  //   cookie: false,
+  //   xfbml: true,
+  //   version: 'v2.4'
+  // });
 
   // X-Editable settings (theme)
   editableThemes.bs3.inputClass = 'input-sm';
